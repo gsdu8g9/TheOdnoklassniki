@@ -10,20 +10,20 @@ require_relative 'odnoklassniki_client.rb'
 
 login = 'sample_login'
 password = 'sample_password'
-profile = 'profile_id'
+profile_id = 'profile_id'
 
 client = OdnoklassnikiClient.new
              .login(login, password)
-             .open_profile(profile)
 
-@workspace = Workspace.new(profile)
+profile_page = client.profile(profile_id).open
 
-client.all_photos
+@workspace = Workspace.new(profile_id)
+
+profile_page.all_photos
     .open
     .save_to(@workspace)
 
-@albums = client.albums
-@albums.each { |album|
+profile_page.albums.each { |album|
   album.open.save_to(@workspace)
 }
 
