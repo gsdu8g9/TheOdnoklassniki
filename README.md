@@ -30,3 +30,5 @@ profile_page.albums.each { |album|
 client.close
 
 ```
+
+Don't ask why - the quality of downloaded back images is awful. It was couple of hours of fun experience with new language and looking pretty neat IDE [Rubymine](https://www.jetbrains.com/ruby/).
