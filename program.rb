@@ -3,12 +3,6 @@
 
 require_relative 'odnoklassniki_client.rb'
 
-login = 'valera.rykov'
-password = 'zaq12wsx'
-profile_id = 'valeriy.rykov'
-
-require_relative 'odnoklassniki_client.rb'
-
 login = 'sample_login'
 password = 'sample_password'
 profile_id = 'profile_id'
